@@ -16,17 +16,17 @@ namespace Array_Task
                 string fruit = Console.ReadLine();
                 fruits[i] = fruit;
             }
-            for (int i = 0; i < 5; i++)
-            {
+            //for (int i = 0; i < 5; i++)
+            //{
 
-                Console.WriteLine("fruit at index" +{ i}
-                +"is" + { fruits[i] });
+            //    Console.WriteLine("fruit at index" +{ i}
+            //    +"is" + { fruits[i] });
 
         }
-        Console.WriteLine(fruits[i])
+    //    Console.WriteLine(fruits[i])
 
-          Console.ReadLine();
+    //      Console.ReadLine();
 
-    }
+    //}
     }
 }
