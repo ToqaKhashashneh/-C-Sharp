@@ -37,31 +37,31 @@ namespace Task__1__C_
 
             String[] Cars = { "Tesla", "Mercedes", "LandCruiser", "BMW" };
             foreach (String i in Cars)
-            Console.WriteLine(i);
+                Console.WriteLine(i);
 
             Console.WriteLine("Q4");
             Console.WriteLine("Input Your First Name");
-            String FName= Console.ReadLine();
+            String FName = Console.ReadLine();
 
 
             Console.WriteLine("Input Your Last Name");
-           String LName = Console.ReadLine();
+            String LName = Console.ReadLine();
 
             Console.WriteLine("Input Your Year Of Birth");
             String Year = Console.ReadLine();
 
-            Console.Write(FName); 
-            Console.Write(LName); 
+            Console.Write(FName);
+            Console.Write(LName);
             Console.WriteLine(Year);
 
             Console.WriteLine("Q5");
 
-            string [] Elemnts = new string [10];
+            string[] Elemnts = new string[10];
             for (int i = 0; i < 10; i++)
-            {           
+            {
                 Console.WriteLine("Enter Element ");
                 string element = Console.ReadLine();
-                Elemnts[i]= element;
+                Elemnts[i] = element;
             }
             Console.WriteLine("The Elements are ");
 
@@ -69,9 +69,9 @@ namespace Task__1__C_
             {
                 Console.WriteLine(Elemnts[i]);
             }
-           
-            Console.ReadLine();
 
+
+            Console.ReadLine();
 
 
 
