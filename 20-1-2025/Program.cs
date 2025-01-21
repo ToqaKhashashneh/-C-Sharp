@@ -133,8 +133,10 @@ namespace _20_1_2025
 
         //Q Class && Object
 
-        public  class  Hotel_Reservations 
+          class  Hotel_Reservations 
         {
+
+            
             public int RoomNumber;
             public string RoomType;
             public double PricePerNight;
