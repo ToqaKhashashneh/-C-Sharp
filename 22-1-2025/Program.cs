@@ -39,7 +39,7 @@ namespace _22_1_2025
 
             Car car2 = new Car();
             car2.Brand = "Toyota";
-            car2.Model = "Land Crusier";
+            car2.Model = "Land Cruiser";
             car2.numberOfDoors = 4;
             car2.Start();
             car2.print();
