@@ -62,7 +62,7 @@ namespace _22_1_2025
 //for data it means that i take senstive data and make operations on it without displaying the orginal data for security reasons
 
 //4)What is the sealed class?
-// it is a parent class aka(super-classes)ot(base class) which can't be inherited to child classes aka (sub-classes) (derived) although we can make object from it
+// it is a parent class aka(super-classes) or (base class) which can't be inherited to child classes aka (sub-classes) or (derived classes) although we can make object from it
 // in other words the parent class can't be extended.
 // it is done by adding the keyword "sealed" before the class that we want it to be sealed 
 
