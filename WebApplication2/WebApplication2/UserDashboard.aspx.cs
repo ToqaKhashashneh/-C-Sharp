@@ -13,5 +13,17 @@ namespace WebApplication2
         {
 
         }
+
+        protected void addBook_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AllBooks.aspx");
+        }
+
+        protected void SeeRoom_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AllMeetingRooms.aspx");
+        }
+
+        
     }
 }

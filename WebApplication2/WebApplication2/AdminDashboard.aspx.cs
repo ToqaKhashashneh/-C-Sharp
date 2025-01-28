@@ -21,12 +21,22 @@ namespace WebApplication2
 
         protected void editBook_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("EditBook.aspx");
         }
 
         protected void addMeeting_Click(object sender, EventArgs e)
         {
             Response.Redirect("AddMeetingRoom.aspx");   
+        }
+
+        protected void SeeBooks_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AllBooks.aspx");
+        }
+
+        protected void SeeRooms_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AllMeetingRooms.aspx");
         }
     }
 }

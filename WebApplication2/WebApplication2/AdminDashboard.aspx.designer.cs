@@ -42,6 +42,15 @@ namespace WebApplication2
         protected global::System.Web.UI.WebControls.Button editBook;
 
         /// <summary>
+        /// SeeBooks control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button SeeBooks;
+
+        /// <summary>
         /// addMeeting control.
         /// </summary>
         /// <remarks>
@@ -49,5 +58,14 @@ namespace WebApplication2
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button addMeeting;
+
+        /// <summary>
+        /// SeeRooms control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button SeeRooms;
     }
 }

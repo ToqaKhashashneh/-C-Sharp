@@ -51,6 +51,15 @@ namespace WebApplication2
         protected global::System.Web.UI.WebControls.TextBox booktype;
 
         /// <summary>
+        /// booklevel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox booklevel;
+
+        /// <summary>
         /// lblmsg control.
         /// </summary>
         /// <remarks>

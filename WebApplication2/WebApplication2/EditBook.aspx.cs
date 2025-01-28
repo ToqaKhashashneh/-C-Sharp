@@ -37,7 +37,7 @@ namespace WebApplication2
                 // Ensure we trim whitespace for accurate comparison
                 if (parts[0].Trim() == id)
                 {
-                    bookDetails[i] = $"{id}, {name}, {type}, {level}";
+                    bookDetails[i] = $"{id} {name} {type} {level}";
                     File.WriteAllLines(path, bookDetails);
                     return;
                 }
