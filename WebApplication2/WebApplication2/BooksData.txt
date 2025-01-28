@@ -1,0 +1,4 @@
+1, H, H, H
+2 Fluid Engineering Mid-Level
+3 Foundation Engineering Hard-Level
+4 Physics Engineering Hard-Level
