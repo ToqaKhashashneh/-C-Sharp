@@ -43,7 +43,8 @@ namespace WebApplication2
                 }
             }
 
-
+            lblmsg.Text = "Book has been edited successfully!";
+            lblmsg.Visible = true;
 
 
 

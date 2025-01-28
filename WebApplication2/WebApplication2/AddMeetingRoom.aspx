@@ -18,7 +18,7 @@
             
 
 
-                        <section class="vh-100" style="background-color: #eee;">
+  <section class="vh-100" style="background-color: burlywood;">
   <div class="container h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-lg-12 col-xl-11">
@@ -34,32 +34,36 @@
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                     <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                        <asp:TextBox ID="id" runat="server"></asp:TextBox>
                       <label class="form-label" for="form3Example1c">Room ID</label>
+                        <asp:TextBox ID="id" runat="server"></asp:TextBox>
+
                     </div>
                   </div>
 
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                     <asp:TextBox ID="name" runat="server"></asp:TextBox>
                       <label class="form-label" for="form3Example3c">Room Name</label>
+                     <asp:TextBox ID="name" runat="server"></asp:TextBox>
+
                     </div>
                   </div>
 
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                     <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                   <asp:TextBox ID="loc" runat="server"></asp:TextBox>
                       <label class="form-label" for="form3Example4c">Room Location</label>
+                   <asp:TextBox ID="loc" runat="server"></asp:TextBox>
+
                     </div>
                   </div>
 
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                     <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                     <asp:TextBox ID="cap" runat="server"></asp:TextBox>
                       <label class="form-label" for="form3Example4cd">Room Capacity</label>
+                     <asp:TextBox ID="cap" runat="server"></asp:TextBox>
+
                     </div>
                   </div>
 
