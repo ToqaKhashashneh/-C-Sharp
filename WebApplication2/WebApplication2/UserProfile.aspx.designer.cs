@@ -11,7 +11,7 @@ namespace WebApplication2
 {
 
 
-    public partial class EditBook
+    public partial class UserProfile
     {
 
         /// <summary>
@@ -24,76 +24,85 @@ namespace WebApplication2
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Search control.
+        /// ProfileName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Search;
+        protected global::System.Web.UI.WebControls.TextBox ProfileName;
 
         /// <summary>
-        /// SearchBtn control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SearchBtn;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// bookid control.
+        /// ProfileEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox bookid;
+        protected global::System.Web.UI.WebControls.TextBox ProfileEmail;
 
         /// <summary>
-        /// bookname control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox bookname;
+        protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// booktype control.
+        /// ProfilePassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox booktype;
+        protected global::System.Web.UI.WebControls.TextBox ProfilePassword;
 
         /// <summary>
-        /// booklevel control.
+        /// Label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox booklevel;
+        protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// SearchResult control.
+        /// ProfilePhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label SearchResult;
+        protected global::System.Web.UI.WebControls.TextBox ProfilePhone;
 
         /// <summary>
-        /// Editbtn control.
+        /// Label4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Editbtn;
+        protected global::System.Web.UI.WebControls.Label Label4;
+
+        /// <summary>
+        /// ProfileCountry control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ProfileCountry;
 
         /// <summary>
         /// lblmsg control.
@@ -103,5 +112,14 @@ namespace WebApplication2
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblmsg;
+
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

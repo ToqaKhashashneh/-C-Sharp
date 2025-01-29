@@ -77,6 +77,7 @@
     <Content Include="SignIn.aspx" />
     <Content Include="SignUp.aspx" />
     <Content Include="UserDashboard.aspx" />
+    <Content Include="UserProfile.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +151,13 @@
     </Compile>
     <Compile Include="UserDashboard.aspx.designer.cs">
       <DependentUpon>UserDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

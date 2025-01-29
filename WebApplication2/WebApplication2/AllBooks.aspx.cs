@@ -16,10 +16,33 @@ namespace WebApplication2
 
 
 
+            //string file = Server.MapPath("BooksData.txt");
+            //string[] books = File.ReadAllLines(file);
+            //foreach (string book in books)
+            //{
+            //        string[] BooksSet = book.Split(' ');
+            //    booksData.InnerHtml += $"<tr><td>{BooksSet[0]}</td> <td>{BooksSet[1]}</td> <td>{BooksSet[2]}</td> <td>{BooksSet[3]}</td></tr>";
+
+
+            //}
+
+
+
+
+
+
+
+
+
+
             string file = Server.MapPath("BooksData.txt");
             string[] books = File.ReadAllLines(file);
-            StringBuilder row = new StringBuilder();
 
+
+            // Create a StringBuilder to store the rows
+            // This is more efficient than concatenating strings 
+            StringBuilder row = new StringBuilder();
+            
             foreach (string book in books)
             {
 

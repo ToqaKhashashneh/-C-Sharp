@@ -20,6 +20,8 @@ namespace WebApplication2
             String Email = email.Text;
             String Password = password.Text;
 
+            Session["UserEmail"] = email.Text;
+
             // Check if email is empty
 
             if (Email == "")
@@ -37,7 +39,7 @@ namespace WebApplication2
             foreach (string user in users)
             {
                 //split each line into an array (the trigger is the space)
-                string[] userElemnts = user.Split(' ');
+                string[] userElemnts = user.Split(',');
 
                 //check if the email and password match
                 if (userElemnts[1] == Email && userElemnts[2] == Password)

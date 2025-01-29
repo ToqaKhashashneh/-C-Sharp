@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Reflection.Emit;
+using System.Xml.Linq;
 using System.IO;
 
 namespace WebApplication2
@@ -15,7 +17,59 @@ namespace WebApplication2
 
         }
 
-        protected void Unnamed_Click(object sender, EventArgs e)
+       
+        protected void SearchBtn_Click(object sender, EventArgs e)
+        {
+
+            string IDInput = Search.Text;
+           
+
+
+            string path = Server.MapPath("BooksData.txt");
+            if (File.Exists(path))
+            {
+
+                string [] BooksSet = File.ReadAllLines(path); // Read all lines from the file
+
+                for (int i = 0; i < BooksSet.Length; i++) //loop through them line by line
+                {
+                    string [] bookData = BooksSet[i].Split(' ');  //for each line, split the data by space
+
+
+                    if (bookData [0] == IDInput)
+                    {   bookid.Text = bookData[0];
+                        bookname.Text = bookData[1];
+                        booktype.Text = bookData[2];
+                        booklevel.Text = bookData[3];
+                        SearchResult.Text = "Book found!";
+                        SearchResult.Visible = true;
+                        break;
+                    }
+
+                    else
+                    {
+                        SearchResult.Text = "Book not found!";
+                        SearchResult.Visible = true;
+                        bookid.Text = "";
+                        bookname.Text = "";
+                        booktype.Text = "";
+                        booklevel.Text = "";
+                        
+
+                    }
+
+                }
+
+            }
+           
+
+
+        }
+
+
+
+
+        protected void Edit(object sender, EventArgs e)
         {
 
 
@@ -26,11 +80,11 @@ namespace WebApplication2
 
             string path = Server.MapPath("BooksData.txt");
 
-            // Read all lines from the file into a List
-            var bookDetails = File.ReadAllLines(path).ToList();
+
+            var bookDetails = File.ReadAllLines(path);
 
             // Iterate and update the line with the matching ID
-            for (int i = 0; i < bookDetails.Count; i++)
+            for (int i = 0; i < bookDetails.Length; i++)
             {
                 var parts = bookDetails[i].Split(' ');
 
@@ -39,15 +93,26 @@ namespace WebApplication2
                 {
                     bookDetails[i] = $"{id} {name} {type} {level}";
                     File.WriteAllLines(path, bookDetails);
-                    return;
+                    break;
                 }
             }
 
-            lblmsg.Text = "Book has been edited successfully!";
+            lblmsg.Text = "Profile has been edited successfully!";
             lblmsg.Visible = true;
 
 
 
         }
+
+
+
+
+
+
+
+
+
+
+
     }
 }

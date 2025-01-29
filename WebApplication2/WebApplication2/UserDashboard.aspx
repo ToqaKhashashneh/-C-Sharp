@@ -10,32 +10,36 @@
     <form id="form1" runat="server">
         <div>
 
+            <div class ="row">
+            <div class="col-6 ">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">All Books</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <asp:Button ID="SeeBook" runat="server" Text="See Books" CssClass="btn btn-primary" OnClick="addBook_Click" />
+
+                    </div>
+                </div>
+            </div>
 
 
- <div class="card" style="width: 18rem;">
-<div class="card-body">
-  <h5 class="card-title">All Books</h5>
-  <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <asp:Button ID="SeeBook" runat="server" Text="See Books" CssClass="btn btn-primary" OnClick="addBook_Click" />
- 
+            <div class="col-6 ">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">All Meeting Rooms</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <asp:Button ID="SeeRoom" runat="server" Text="See Meeting Rooms" CssClass="btn btn-primary" OnClick="SeeRoom_Click" />
+
+                </div>
+            </div>
+            </div>
+
 </div>
-     </div>
 
 
-            
- <div class="card" style="width: 18rem;">
-<div class="card-body">
-  <h5 class="card-title">All Meeting Rooms</h5>
-  <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <asp:Button ID="SeeRoom" runat="server" Text="See Meeting Rooms" CssClass="btn btn-primary" OnClick="SeeRoom_Click" />
- 
-</div>
-     </div>
-
-
-
+            <asp:Button ID="GoTOProfile" runat="server" Text="Go To Profile" OnClick="Profile_Click" /> 
 
 
         </div>

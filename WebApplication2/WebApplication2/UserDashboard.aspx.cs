@@ -24,6 +24,9 @@ namespace WebApplication2
             Response.Redirect("AllMeetingRooms.aspx");
         }
 
-        
+        protected void Profile_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("UserProfile.aspx");
+        }
     }
 }

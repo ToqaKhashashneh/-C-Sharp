@@ -29,9 +29,8 @@
                     <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                     <div data-mdb-input-init class="form-outline flex-fill mb-0">
 
-                      
+                      <label class="form-label" for="form3Example1c">Your Name</label>                      
                         <asp:TextBox ID="name" runat="server" CssClass="form-control"></asp:TextBox>
-                      <label class="form-label" for="form3Example1c">Your Name</label>
 
                     </div>
                   </div>
@@ -39,9 +38,8 @@
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                     
+                      <label class="form-label" for="form3Example3c">Your Email</label>                     
                         <asp:TextBox ID="email" runat="server" CssClass="form-control"></asp:TextBox> 
-                      <label class="form-label" for="form3Example3c">Your Email</label>
                     </div>
                   </div>
 
@@ -50,18 +48,33 @@
                     <div data-mdb-input-init class="form-outline flex-fill mb-0">
 
                       
-
-                        <asp:TextBox ID="password" runat="server" CssClass="form-control"></asp:TextBox>    
                       <label class="form-label" for="form3Example4c">Password</label>
+                        <asp:TextBox ID="password" runat="server" CssClass="form-control"></asp:TextBox>    
                     </div>
                   </div>
 
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                     <div data-mdb-input-init class="form-outline flex-fill mb-0">
-                      
+                      <label class="form-label" for="form3Example4cd">Repeat your password</label>                      
                         <asp:TextBox ID="ConfirmPassword" runat="server" CssClass="form-control"></asp:TextBox>    
-                      <label class="form-label" for="form3Example4cd">Repeat your password</label>
+                    </div>
+                  </div>
+
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                        <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                            <label class="form-label" for="form3Example4cd">Phone Number</label>
+                            <asp:TextBox ID="Phone" runat="server" CssClass="form-control"></asp:TextBox>
+                        </div>
+                    </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                    <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                      <label class="form-label" for="form3Example4cd">Country</label>                    
+                        <asp:TextBox ID="country" runat="server" CssClass="form-control"></asp:TextBox>    
                     </div>
                   </div>
 

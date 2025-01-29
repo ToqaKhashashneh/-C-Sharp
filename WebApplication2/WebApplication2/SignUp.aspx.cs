@@ -23,9 +23,14 @@ namespace WebApplication2
             string Email = email.Text;
             string Password = password.Text;
             string ConfirmPass = ConfirmPassword.Text;
+            string PhoneNum = Phone.Text;
+            string Country = country.Text;
 
+
+
+            
             //Store the user input in a string (one sentence):
-            string userdata = $"{Name} {Email} {Password} {ConfirmPass}";
+            string userdata = $"{Name},{Email},{Password},{ConfirmPass},{PhoneNum},{Country}";
 
             //Server.MapPath() is a method that returns the physical file path
             //that corresponds to the specified virtual path on the Web server.
@@ -36,9 +41,11 @@ namespace WebApplication2
 
             // to check if the user left any field empty (form validation):
 
-            if (Name == "" || Email == "" || Password == "" || ConfirmPass == "")
+            if (Name == "" || Email == "" || Password == "" || ConfirmPass == "" || PhoneNum == "" || Country == "")
             {
-                lblmsg.Text = "All Fileds Are Required";
+                Response.Write("<script>alert('All fields are required!');</script>");
+
+                //lblmsg.Text = "All Fileds Are Required";
                 lblmsg.Visible = true;
             }
             else
